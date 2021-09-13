@@ -13,12 +13,12 @@ function compute() {
 
 }
 
-//update ther rate value
+//Update the rate value
 function getSliderValue() {
     document.getElementById("rateSpan").innerHTML = document.getElementById("rate").value;
 }
 
-//Check for positive values
+//Validate user input
 function validateAmount() {
     var principal = document.getElementById("principal").value;
     var biggerThanZero = parseInt(principal) > 0;
@@ -26,5 +26,8 @@ function validateAmount() {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
+if (principal == "") {alert("Enter a valid number");
+ document.getElementById("principal").focus();
 
+}
 }
