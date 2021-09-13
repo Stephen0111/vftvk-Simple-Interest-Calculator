@@ -11,5 +11,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
     border-radius: 25px;
     margin: auto;
-    align: center;
+    text-align: center;
+}
+.button {
+    position: absolute;
+    top: 50%;
 }
