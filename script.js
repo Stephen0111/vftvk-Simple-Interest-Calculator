@@ -26,7 +26,7 @@ function validateAmount() {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
-else if( principal ==""){
+else if( document.getElementById("principal").value ==""){
     alert("Amount is blank");
      document.getElementById("principal").focus();
     }
