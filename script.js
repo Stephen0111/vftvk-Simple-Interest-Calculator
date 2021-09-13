@@ -24,8 +24,10 @@ function validateAmount() {
     var greaterThanZero = parseInt(principal) > 0;
     if (!greaterThanZero) {
         alert("Enter a positive number");
-        return false;
         document.getElementById("principal").focus();
     }
-
+else if( principal ==""){
+    alert("Amount is blank");
+     document.getElementById("principal").focus();
+    }
 }
